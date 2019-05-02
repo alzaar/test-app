@@ -1,0 +1,8 @@
+<h1>Dogs#edit</h1>
+<p>Find me in app/views/dogs/edit.html.erb</p>
+<h1><%= @dog.name %></h1>
+<%= form_with model: @dog do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :motto %>
+  <%= f.submit %>
+<% end %>

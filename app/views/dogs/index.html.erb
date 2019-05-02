@@ -1,0 +1,9 @@
+<h1>Dogs#index</h1>
+<p>Find me in app/views/dogs/index.html.erb</p>
+<% @dogs.each do |dog| %>
+  <h1><%= link_to dog.name,  dog_path(dog)%></h1>
+  <h3><%= dog.motto %></h3>
+<% end %>
+
+
+<button type="button" name="button"><%= link_to 'New Dog', new_dog_path  %></button>

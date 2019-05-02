@@ -1,0 +1,8 @@
+<h1>Dogs#show</h1>
+<p>Find me in app/views/dogs/show.html.erb</p>
+<h1><%= @dog.name %></h1>
+<h2><%= @dog.motto %></h2>
+
+<button type="button" name="button"><%= link_to 'Go back', dogs_path %></button>
+<button type="button" name="button"><%= link_to 'Edit', edit_dog_path(@dog) %></button>
+<button type="button" name="button"><%= link_to 'Delete', @dog, method: :delete, data: { confirm: 'Are you sure ?' } %></button>
